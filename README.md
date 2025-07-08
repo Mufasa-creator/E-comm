@@ -91,18 +91,8 @@ export default async function main(args) {
                   {
                       "name": "More info",
                       "request": {
-                          "type": "click_URL",
-                          "payload":{
-                              "label":"Link",
-                              "actions":[
-                                  {
-                                      "type":"open_url",
-                                      "payload":{
-                                          "url": metadata.productUrl
-                                      }
-                                  }
-                              ]
-                          }
+                          "type": "text", // Changed from click_URL
+                          "payload": metadata.body // Sending the full body as payload
                       }
                   }
               ]
